@@ -26,5 +26,7 @@ Route::group(['middleware' => ['auth:api']], function () {
 
 Route::get('locations','LocationController@index');
 Route::get('customers','CustomerController@index');
+Route::get('manufacturers','ManufacturerController@index');
+Route::get('model-vehicles','ModelVehicleController@index');
 
 
