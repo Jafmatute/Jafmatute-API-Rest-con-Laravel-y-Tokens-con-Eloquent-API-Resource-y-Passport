@@ -28,5 +28,9 @@ Route::get('locations','LocationController@index');
 Route::get('customers','CustomerController@index');
 Route::get('manufacturers','ManufacturerController@index');
 Route::get('model-vehicles','ModelVehicleController@index');
+Route::get('type-vehicles','TypeVehicleController@index');
+Route::get('rental-statuses','RentalStatusController@index');
+Route::get('vehicles','VehicleController@index');
+Route::get('rentals','RentalController@index');
 
 
