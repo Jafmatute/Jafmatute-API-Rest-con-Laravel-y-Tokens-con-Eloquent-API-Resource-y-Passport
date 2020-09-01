@@ -12,4 +12,9 @@ class VehicleController extends Controller
     {
         return VehicleResource::collection(Vehicle::all());
     }
+
+    public function show($id)
+    {
+        return new VehicleResource(Vehicle::find($id));
+    }
 }

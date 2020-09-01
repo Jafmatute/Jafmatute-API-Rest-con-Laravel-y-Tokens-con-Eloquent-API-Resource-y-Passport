@@ -17,6 +17,7 @@ class VehicleResource extends JsonResource
     {
         //return parent::toArray($request);
         return [
+            'id'=>$request->id,
             'model'=> new ModelVehicleResource($this->model_vehicle),
             'location'=>new LocationResource($this->location),
             'type'=>new TypeVehicleResource($this->type_vehicle),
